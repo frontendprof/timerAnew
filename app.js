@@ -3,7 +3,14 @@
 const durationInput=document.querySelector("#duration");
 const startBtn=document.querySelector("#start");
 const pauseBtn=document.querySelector("#pause");
+const circle=document.querySelector("circle");
 
+const perimeter=circle.getAttribute("r")*2*Math.PI;
+
+circle.setAttribute("stroke-dasharray",perimeter);
+
+
+let currentOffset = 0;
 
 const timer = new Timer(durationInput,startBtn,pauseBtn,{
     onStart(){
@@ -12,7 +19,8 @@ const timer = new Timer(durationInput,startBtn,pauseBtn,{
     },
 
     onTick(){
-        console.log("Timer just ticked down");
+        circle.setAttribute("stroke-dashoffset",currentOffset);
+        currentOffset=currentOffset-50;
         
 
     },
