@@ -1,0 +1,72 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+
+.dial {
+    height: 400px;
+    width: 400px;
+  }
+  
+.timer {
+    position: relative;
+    display: inline-block;
+}
+  
+* {
+    font: inherit;
+}
+  
+body {
+    font-family: 'Fredericka the Great', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #E55D87;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #5FC3E4, #E55D87);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #5FC3E4, #E55D87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+    
+.timer input {
+    display: block;
+    /* border: none; */
+    width: 240px;
+    font-size: 90px;
+    text-align: center;
+    background-color: rgb(238, 238, 12);
+    cursor: pointer;
+    border-radius: 20px;
+}
+  
+.timer button {
+    border: 2px solid black;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+  
+.timer button:focus {
+    outline: none;
+}
+  
+.timer input:focus {
+    outline: none;
+}
+  
+.controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
